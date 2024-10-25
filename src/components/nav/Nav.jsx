@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './nav.css';
 
 const Nav = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
         <span className="logo-text">Simba <span className="logo-highlight">Consultancy</span></span>
       </div>
@@ -26,7 +43,7 @@ const Nav = () => {
         <a href="#contacts" className="appointment-btn">Get Appointment</a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

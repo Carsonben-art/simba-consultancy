@@ -1,0 +1,19 @@
+.title p{
+    padding-left: 2rem;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+.client-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.client-logos img{
+    width: 100px;
+    height: 70px;
+    filter: grayscale(100%);
+}
+.client-logos img:hover{
+    filter: grayscale(0%);
+    transition: 0.1s ease-in-out;
+}

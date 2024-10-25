@@ -1,15 +1,22 @@
 /* NavBar.css */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    padding-right: 2rem;
-    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05); */
-    font-family: 'Arial', sans-serif;
-    position: fixed;
-    width: 100%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  padding-right: 2rem;
+  font-family: 'Arial', sans-serif;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.3s, backdrop-filter 0.3s; 
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #fff;
+}
   
   .navbar-logo .logo-text {
     font-size: 24px;
