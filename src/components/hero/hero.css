@@ -1,0 +1,87 @@
+.hero-section {
+    min-height: 90vh;
+    background: url('../../Assets/doctor1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .hero-left {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .subtitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ff6b6b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle-line {
+    width: 50px;
+    height: 2px;
+    background-color: #ff6b6b;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    color: #1a365d;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    color: #718096;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .hero-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .hero-left {
+      padding-right: 0;
+    }
+
+    .subtitle {
+      justify-content: center;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .image-background {
+      width: 100%;
+      height: 100%;
+    }
+  }
