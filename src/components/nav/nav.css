@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   transition: background-color 0.3s, backdrop-filter 0.3s; 
+  z-index: 1000;
 }
 
 .navbar.scrolled {
