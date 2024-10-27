@@ -1,17 +1,19 @@
 /* HospitalSection.css */
 .hospital-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px;
     background: url('../../Assets/globe2.jpg');
     background-size: cover;
     background-position: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    
+  }
+  .surveys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
   }
-  
   .images-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;  
@@ -98,4 +100,23 @@
   .learn-more-btn:hover {
     background-color: #d2e3fc;
   }
-  
+  /* Message Stylings */
+.message{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+.message-container {
+  max-width: 70%;
+  background: rgba(247, 247, 247, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+.message-container p{
+  text-align: center;
+}
+.message-container p:nth-child(2){
+  color: #f37055;
+}

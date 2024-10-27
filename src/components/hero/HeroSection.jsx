@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useScroll, useTransform } from 'framer-motion';
-import heroImage from '../../Assets/hero-illustration-bg.png';
+// import heroImage from '../../Assets/hero-illustration-bg.png';
 import './hero.css'
 
 const HeroSection = () => {
   // Scroll progress animation
   const { scrollY } = useScroll();
   const backgroundY = useTransform(scrollY, [0, 500], ['0%', '50%']);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  // const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   // Initial animation variants
   const containerVariants = {
