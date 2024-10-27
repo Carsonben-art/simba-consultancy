@@ -1,0 +1,106 @@
+.achievement-section{
+    background: url('../../Assets/globe1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    gap: 2rem;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.title .line{
+    width: 80px;
+    height: 3px;
+    background-color: #f37055;
+}
+.achievements-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.achievements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.achievements .icon{
+    width: 40px;
+    height: 40px;
+    color: #f37055;
+}
+/* Contacts form styling */
+.contacts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 4rem;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+}
+.socials a {
+    background-color: rgba(247, 247, 247, 0.8);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.icons{
+    text-decoration: none ;
+    width: 20px;
+    height: 20px;
+    color: #f37055;
+}
+.contact-form{
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(247, 247, 247, 0.1);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+}
+.form-container input{
+    width: 100%;
+    height: 40px;
+    background: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    padding-left: 10px;
+}
+.form-container textarea{
+    width: 100%;
+    height: 100px;
+    background: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    padding-left: 10px;
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #4ea3f0;
+    color: #ffffff;
+}
+button:hover{
+    background-color: #0078d4;
+}

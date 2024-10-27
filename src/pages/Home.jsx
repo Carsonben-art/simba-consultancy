@@ -4,7 +4,8 @@ import HeroSection from '../components/hero/HeroSection'
 import Partners from '../components/partners/Partners'
 import ServicePage from '../components/services/ServicePage'
 import Survey from '../components/survey/Survey'
-// import Achievements from '../components/achievements/Achievements'
+import Achievements from '../components/achievements/Achievements'
+import FooterSection from '../components/footer/FooterSection'
 
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
       <Partners />
       <ServicePage />
       <Survey />
-      {/* <Achievements /> */}
+      <Achievements />
+      <FooterSection />
     </div>
   )
 }

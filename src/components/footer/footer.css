@@ -1,0 +1,9 @@
+.footer{
+    background-color: rgb(2, 2, 56);
+    /* height: auto; */
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}

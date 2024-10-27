@@ -17,7 +17,7 @@ const services = [
   },
   {
     id: 2,
-    title: "Strategic Systems & Human Capital Solutions",
+    title: "Strategic Systems and Human Capital Solutions",
     description:
       "We develop training materials targeting human systems in the areas requested on consultation by clients in UN bodies, governments, INGOs, CSOs, and Parastatals.",
     image: training,
@@ -37,7 +37,7 @@ const ServicePage = () => {
       className="services-container"
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
 
       <h2 className="services-title">
@@ -52,7 +52,7 @@ const ServicePage = () => {
             className="service-card"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
             <img
