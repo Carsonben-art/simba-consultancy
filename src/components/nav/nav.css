@@ -60,5 +60,25 @@
   .navbar-cta .appointment-btn:hover {
     background-color: #0078d4;
   }
+.menu-container{
+  display: none;
+}
 
+/* Tablet design */
+@media (max-width: 960px) {
+  .navbar-cta{
+    display: none;
+  }
+}
+@media (max-width: 480px){
+  .navbar-links{
+    display: none;
+  }
+  .menu-container{
+    display: block;
+  }
+  .logo-text, .logo-highlight{
+    font-size: 18px;
+  }
+}
   

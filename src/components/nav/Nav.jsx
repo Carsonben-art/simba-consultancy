@@ -1,46 +1,74 @@
 import React, { useState, useEffect } from 'react';
 import './nav.css';
+import { Menu, MenuList, MenuButton, MenuItem, IconButton } from '@chakra-ui/react';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link as ScrollLink } from 'react-scroll'; // Import from react-scroll
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
+    setIsScrolled(window.scrollY > 50);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-        <span className="logo-text">Simba <span className="logo-highlight">Consultancy</span></span>
+        <span className="logo-text">
+          Simba <span className="logo-highlight">Consultancy</span>
+        </span>
       </div>
 
       <ul className="navbar-links">
         <li className="dropdown">
-          <a href="#Home">Home</a>
+          <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
         </li>
         <li className="dropdown">
-          <a href="#about">About Us</a>
+          <ScrollLink to="about" smooth={true} duration={500}>About Us</ScrollLink>
         </li>
         <li className="dropdown">
-          <a href="#services">Services</a>
+          <ScrollLink to="services" smooth={true} duration={500}>Services</ScrollLink>
         </li>
-        <li><a href="#contacts">Our Team</a></li>
-        <li><a href="#contacts">Contact</a></li>
+        <li>
+          <ScrollLink to="achievements" smooth={true} duration={500}>Our Achievements</ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to="contacts" smooth={true} duration={500}>Contact</ScrollLink>
+        </li>
       </ul>
 
       <div className="navbar-cta">
-        <a href="#contacts" className="appointment-btn">Get Appointment</a>
+        <ScrollLink to="contacts" smooth={true} duration={500} className="appointment-btn">
+          Get Appointment
+        </ScrollLink>
+      </div>
+
+      <div className="menu-container">
+        <Menu>
+          <MenuButton as={IconButton} aria-label="Options" icon={<RxHamburgerMenu />} variant="outline" />
+          <MenuList>
+            <MenuItem>
+              <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
+            </MenuItem>
+            <MenuItem>
+              <ScrollLink to="services" smooth={true} duration={500}>Services</ScrollLink>
+            </MenuItem>
+            <MenuItem>
+              <ScrollLink to="about" smooth={true} duration={500}>About Us</ScrollLink>
+            </MenuItem>
+            <MenuItem>
+              <ScrollLink to="achievements" smooth={true} duration={500}>Achievements</ScrollLink>
+            </MenuItem>
+            <MenuItem>
+              <ScrollLink to="contacts" smooth={true} duration={500}>Contacts</ScrollLink>
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </div>
     </nav>
   );

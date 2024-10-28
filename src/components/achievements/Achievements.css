@@ -24,6 +24,7 @@
 .achievements-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -46,6 +47,7 @@
     align-items: center;
     gap: 5rem;
     padding-top: 4rem;
+    flex-wrap: wrap;
 }
 .socials{
     display: flex;
@@ -92,15 +94,21 @@
     padding-left: 10px;
 }
 button{
+    background-color: #4ea3f0;
     margin-top: 10px;
     width: 100%;
     height: 40px;
     border-radius: 20px;
     outline: none;
     border: none;
-    background: #4ea3f0;
     color: #ffffff;
 }
 button:hover{
     background-color: #0078d4;
+}
+@media (max-width: 960px){
+    .contacts{
+        padding: 0;
+        gap: 10px;
+    }
 }

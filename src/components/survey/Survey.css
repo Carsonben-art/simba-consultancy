@@ -95,6 +95,7 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    max-width: 200px;
   }
   
   .learn-more-btn:hover {
@@ -119,4 +120,12 @@
 }
 .message-container p:nth-child(2){
   color: #f37055;
+}
+@media (max-width: 960px){
+  .message-container{
+    max-width: 100%;
+  }
+  .surveys{
+    flex-wrap: wrap;
+  }
 }

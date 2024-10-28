@@ -42,22 +42,22 @@ const Survey = () => {
       {/* Message */}
 
       <div className='message'>
-    <div className="message-container">
-     <p>
-      "As a public health professional I am totally sold to contribute
-       in improving the quality of life of the community by protecting, 
-       promoting and maintaining their good health. I, therefore, 
-       pass my expertise and extend my excellence of field epidemiological 
-       knowledge along with successful strategies applied for eradication, 
-       prevention and control of diseases, as well as managerial skills 
-       (regarding Public Health), to policy makers, health managers & 
-       public health specialists, to researcher & paramedical/ health staff and to 
-       community and faith based organisations."
-      </p>
-      <p>KHASTO CONSULTANCY </p>
-        <p>Chairman's Message</p>
+        <div className="message-container">
+        <p>
+          "As a public health professional I am totally sold to contribute
+          in improving the quality of life of the community by protecting, 
+          promoting and maintaining their good health. I, therefore, 
+          pass my expertise and extend my excellence of field epidemiological 
+          knowledge along with successful strategies applied for eradication, 
+          prevention and control of diseases, as well as managerial skills 
+          (regarding Public Health), to policy makers, health managers & 
+          public health specialists, to researcher & paramedical/ health staff and to 
+          community and faith based organisations."
+          </p>
+          <p>KHASTO CONSULTANCY </p>
+            <p>Chairman's Message</p>
 
-    </div>
+        </div>
     </div>
     </div>
   );

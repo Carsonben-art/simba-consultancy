@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 1rem;
+    flex-wrap: wrap;
 }
 .client-logos img{
     width: 100px;
