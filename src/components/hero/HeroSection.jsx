@@ -51,7 +51,7 @@ const HeroSection = () => {
               animate={{ width: '50px' }}
               transition={{ duration: 0.8, delay: 0.5 }}
             />
-            <span>Total Education Consultancy</span>
+            <span>Simba Education Consultancy</span>
           </motion.div>
           
           <motion.h1 

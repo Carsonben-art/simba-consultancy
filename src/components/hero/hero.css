@@ -1,6 +1,6 @@
 .hero-section {
     min-height: 90vh;
-    background: url('../../Assets/doctor1.jpg');
+    background: url('../../Assets/herobg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 5%;
@@ -47,7 +47,7 @@
   }
 
   .hero-description {
-    color: #718096;
+    color: #070e18;
     font-size: 1.1rem;
     line-height: 1.6;
   }

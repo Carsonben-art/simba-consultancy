@@ -24,7 +24,7 @@ const Partners = () => {
       visible: (i) => ({
         opacity: 1,
         y: 0,
-        transition: { delay: i * 0.1 }, // staggered effect
+        transition: { delay: i * 0.1 }, 
       }),
     };
   
@@ -47,7 +47,7 @@ const Partners = () => {
               variants={imageVariants}
               initial="hidden"
               animate="visible"
-              custom={index} // Pass index for staggered effect
+              custom={index} 
             />
           ))}
         </div>

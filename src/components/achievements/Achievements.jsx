@@ -9,7 +9,7 @@ const Achievements = () => {
     <div className='achievement-section'>
       <div className="title">
         <div className="line"></div>
-        <p>simba education consultancy</p>
+        <p>Simba Education Consultancy</p>
         <div className="line"></div>
       </div>
       <div className="title-heading">

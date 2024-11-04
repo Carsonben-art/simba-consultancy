@@ -5,7 +5,7 @@ import Partners from '../components/partners/Partners'
 import ServicePage from '../components/services/ServicePage'
 import Survey from '../components/survey/Survey'
 import Achievements from '../components/achievements/Achievements'
-import FooterSection from '../components/footer/FooterSection'
+// import FooterSection from '../components/footer/FooterSection'
 
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       <div id="services"><ServicePage /></div>
       <div id="survey"><Survey /></div>
       <div id="achievements"><Achievements /></div>
-      <div id="contacts"><FooterSection /></div>
+      {/* <div id="contacts"><FooterSection /></div> */}
     </div>
   )
 }
