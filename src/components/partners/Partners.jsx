@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 import './partners.css';
 
-import helpAge from '../../Assets/HelpAge-International.png'
-import jHp from '../../Assets/JHPIEGO-1.png'
-import gK from '../../Assets/Kenya-Government-1.png'
-import redCross from '../../Assets/Kenya-Red-Cross-1.png'
-import kU from '../../Assets/Kenyatta-University-1.png'
-import nationalCouncil from '../../Assets/National-Council-for-Population-and-Development-NCPD-1.jpg'
-import un from '../../Assets/United-Nations-1.jpg'
-import wvi from '../../Assets/World-Vision-International-1.jpg'
+import helpAge from '../../Assets/HelpAge-International.webp'
+import jHp from '../../Assets/JHPIEGO-1.webp'
+import gK from '../../Assets/Kenya-Government-1.webp'
+import redCross from '../../Assets/Kenya-Government-1.webp'
+import kU from '../../Assets/Kenyatta-University-1.webp'
+import nationalCouncil from '../../Assets/National-Council-for-Population-and-Development-NCPD-1.webp'
+import un from '../../Assets/United-Nations-1.webp'
+import wvi from '../../Assets/World-Vision-International-1.webp'
 
 const Partners = () => {
     // Animation variants

@@ -3,9 +3,9 @@ import { useDisclosure, Button, Modal, ModalOverlay, ModalContent, ModalHeader, 
 import { BiAnalyse, BiData, BiServer } from 'react-icons/bi';
 import './Survey.css';
 
-import data from '../../Assets/data.jpg';
-import server from '../../Assets/server.jpg';
-import analysis from '../../Assets/analysis.jpg';
+import data from '../../Assets/data.webp';
+import server from '../../Assets/server.webp';
+import analysis from '../../Assets/analysis.webp';
 
 const Survey = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

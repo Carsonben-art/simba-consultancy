@@ -1,6 +1,8 @@
 .footer{
     background-color: rgb(2, 2, 56);
     /* height: auto; */
+    padding: 0;
+    margin: 0;
 }
 .footer p {
     color: #fff;

@@ -13,9 +13,9 @@ import {
 } from "@chakra-ui/react";
 import "./ServicePage.css";
 
-import training from "../../Assets/training.jpg";
-import research from "../../Assets/research.jpg";
-import development from "../../Assets/development.jpg";
+import training from "../../Assets/training.webp";
+import research from "../../Assets/research.webp";
+import development from "../../Assets/development.webp";
 
 const services = [
   {
