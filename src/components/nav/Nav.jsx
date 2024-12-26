@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './nav.css';
 import { Menu, MenuList, MenuButton, MenuItem, IconButton } from '@chakra-ui/react';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { Link as ScrollLink } from 'react-scroll'; // Import from react-scroll
+import { Link as ScrollLink } from 'react-scroll'; 
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,18 +19,21 @@ const Nav = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
+        <ScrollLink to="home" smooth={true} duration={500}>
         <span className="logo-text">
-          Simba <span className="logo-highlight">Consultancy</span>
+          Simba Education <span className="logo-highlight">Consultants</span>
         </span>
+
+        </ScrollLink>
       </div>
 
       <ul className="navbar-links">
         <li className="dropdown">
           <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
         </li>
-        <li className="dropdown">
+        {/* <li className="dropdown">
           <ScrollLink to="about" smooth={true} duration={500}>About Us</ScrollLink>
-        </li>
+        </li> */}
         <li className="dropdown">
           <ScrollLink to="services" smooth={true} duration={500}>Services</ScrollLink>
         </li>

@@ -6,7 +6,7 @@ import './partners.css';
 import helpAge from '../../Assets/HelpAge-International.webp'
 import jHp from '../../Assets/JHPIEGO-1.webp'
 import gK from '../../Assets/Kenya-Government-1.webp'
-import redCross from '../../Assets/Kenya-Government-1.webp'
+import redCross from '../../Assets/Kenya-Red-Cross-1.webp'
 import kU from '../../Assets/Kenyatta-University-1.webp'
 import nationalCouncil from '../../Assets/National-Council-for-Population-and-Development-NCPD-1.webp'
 import un from '../../Assets/United-Nations-1.webp'

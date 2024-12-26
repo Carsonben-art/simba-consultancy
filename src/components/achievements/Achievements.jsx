@@ -44,6 +44,20 @@ const Achievements = () => {
             <h1>Get In touch</h1>
             <p>A Simba we e committed in providing the highest <br/>
             standard of medical services and cutting-edge consultancy.</p>
+            <h1>Address:</h1>
+            <p>
+              Diamond Plaza, 2nd Floor on Mutati <br/>
+              and Masari Road junction on 3rd <br/>
+              and 4th Parklands Avenue. <br/>
+            </p>
+            <h1>Regional Offices</h1>
+            <p>Juba, South Sudan, <br/>
+                Hargeisa, Somalia, <br/>
+                Kigali, Rwanda.
+            </p>
+            <h1>Contact Details:</h1>
+            <p>Tel: +254 20 5226693</p>
+            <p>Email: info@simbaeducationconsultants.org</p>
             <div className="line"></div>
             <div className="socials">
                 <a href="#facebook"><FaFacebook className='icons'/></a>
