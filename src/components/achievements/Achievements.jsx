@@ -65,6 +65,11 @@ const Achievements = () => {
                 <a href="#X"><FaTwitter className='icons'/></a>
                 <a href="#LinkedIn"><FaLinkedin className='icons' /></a>
             </div>
+            <div className="web-email">
+              <a href="https://webmail.simbaeducationconsultants.org/" target='_blank' rel='noreferrer'>
+                <button className='mails'>Check Mails</button>
+              </a>
+            </div>
         </div>
         <div className="contact-form">
             <h2>Book Now</h2>
@@ -80,7 +85,7 @@ const Achievements = () => {
                 <p>Insert your message.</p>
                 <textarea type="text" />
             </div>
-            <button>Submit</button>
+            <button className='submit-btn'>Submit</button>
         </div>
       </div>
     </div>
